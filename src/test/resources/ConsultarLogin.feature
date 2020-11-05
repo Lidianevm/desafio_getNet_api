@@ -12,9 +12,6 @@ Funcionalidade: Realizar login
       | lidianevalentim@dbc.com | @23dbccompany |
 
   @RealizarLoginErro @LoginSemSenha @TotalTest
-  Esquema do Cenário: Realizar login de usuario faltando informacao da senha
-    Dado que o usuario insere "<email>"
+  Cenário: Realizar login de usuario faltando informacao da senha
+    Dado que o usuario insere "lidianevalentim@dbc.com"
     Então é retornado o erro da simulacao
-    Exemplos:
-      | email
-      | lidianevalentim@dbc.com |
