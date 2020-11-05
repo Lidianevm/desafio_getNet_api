@@ -12,10 +12,8 @@ Funcionalidade: Criar um registro para um usuario
       | lidianevalentim@dbc.com | @23dbccompany |
 
   @CriarRegistroErro @CriarRegistroSemSenha @TotalTest
-  Esquema do Cenário: Criar um registro de usuario faltando informacao da senha
-    Dado que o usuario insere "<email>"
+  Cenário: Criar um registro de usuario faltando informacao da senha
+    Dado que o usuario insere "lidianevalentim@dbc.com"
     Então é retornado o erro da simulacao
-    Exemplos:
-      | email
-      | lidianevalentim@dbc.com |
+
 

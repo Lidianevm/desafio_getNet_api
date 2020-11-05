@@ -9,10 +9,10 @@ import static io.restassured.RestAssured.*;
 
 public class Hooks {
     @BeforeClass
-    public static void beforeClass() {
+    public void beforeClass() {
         enableLoggingOfRequestAndResponseIfValidationFails();
-        baseURI = "https://reqres.in/api/";
-        basePath = "/api/";
+        baseURI = "https://reqres.in/";
+        basePath = "/api";
 
         requestSpecification = new RequestSpecBuilder().
                 setContentType(ContentType.JSON).

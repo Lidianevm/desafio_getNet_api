@@ -7,10 +7,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/Features",
-        glue = {"stepDefinitions"},
+        features = "src/test/resources",
+        glue = {"StepDefinitions"},
         plugin = {"pretty", "html:target/report-html"},
-        tags = ("@CriarSimulacaoSucesso"),
+        tags = ("@ConsultarListaUsuarios"),
         monochrome = true,
         snippets = SnippetType.CAMELCASE
 )
