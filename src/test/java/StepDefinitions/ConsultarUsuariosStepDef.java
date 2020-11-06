@@ -38,8 +38,8 @@ public class ConsultarUsuariosStepDef extends Hooks {
 
 
         assertThat(usuario.getEmail(), containsString("@reqres.in"));
-        //assertThat(usuario.getName(), is("Janet"));
-        //assertThat(usuario.getLastName(), is("Weaver"));
+        assertThat(usuario.getName(), is("Janet"));
+        assertThat(usuario.getLastName(), is("Weaver"));
     }
 
 

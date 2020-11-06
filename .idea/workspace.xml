@@ -57,7 +57,22 @@
       <recent name="C:\desafio_getnet_api\desafio_getNet_api\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CadastrarRegistroStepDef.RegistrarUsuarioSemSenha">
+  <component name="RunManager" selected="JUnit.ConsultarLoginStepDef.RealizarLoginErro">
+    <configuration name="CadastrarRegistroStepDef" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafio_getNet_api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StepDefinitions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="StepDefinitions.CadastrarRegistroStepDef" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CadastrarRegistroStepDef.RegistrarUsuarioComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafio_getNet_api" />
       <extension name="coverage">
@@ -90,7 +105,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsultarUsuariosStepDef.UnicoUsuarioCadastrado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsultarLoginStepDef.RealizarLoginErro" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafio_getNet_api" />
       <extension name="coverage">
         <pattern>
@@ -99,14 +114,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="StepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="StepDefinitions.ConsultarUsuariosStepDef" />
-      <option name="METHOD_NAME" value="UnicoUsuarioCadastrado" />
+      <option name="MAIN_CLASS_NAME" value="StepDefinitions.ConsultarLoginStepDef" />
+      <option name="METHOD_NAME" value="RealizarLoginErro" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsultarUsuariosStepDef.UsuarioNaoEncontrado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsultarLoginStepDef.RealizarLoginSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafio_getNet_api" />
       <extension name="coverage">
         <pattern>
@@ -115,24 +130,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="StepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="StepDefinitions.ConsultarUsuariosStepDef" />
-      <option name="METHOD_NAME" value="UsuarioNaoEncontrado" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CriarUsuarioStepDef.CriaUsuarioComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="desafio_getNet_api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StepDefinitions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="StepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="StepDefinitions.CriarUsuarioStepDef" />
-      <option name="METHOD_NAME" value="CriaUsuarioComSucesso" />
+      <option name="MAIN_CLASS_NAME" value="StepDefinitions.ConsultarLoginStepDef" />
+      <option name="METHOD_NAME" value="RealizarLoginSucesso" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CadastrarRegistroStepDef.RegistrarUsuarioSemSenha" />
+        <item itemvalue="JUnit.ConsultarLoginStepDef.RealizarLoginErro" />
+        <item itemvalue="JUnit.ConsultarLoginStepDef.RealizarLoginSucesso" />
+        <item itemvalue="JUnit.CadastrarRegistroStepDef" />
         <item itemvalue="JUnit.CadastrarRegistroStepDef.RegistrarUsuarioComSucesso" />
-        <item itemvalue="JUnit.CriarUsuarioStepDef.CriaUsuarioComSucesso" />
-        <item itemvalue="JUnit.ConsultarUsuariosStepDef.UnicoUsuarioCadastrado" />
-        <item itemvalue="JUnit.ConsultarUsuariosStepDef.UsuarioNaoEncontrado" />
+        <item itemvalue="JUnit.CadastrarRegistroStepDef.RegistrarUsuarioSemSenha" />
       </list>
     </recent_temporary>
   </component>
@@ -176,38 +175,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="698" y="310" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604505653976" />
-    <state x="765" y="199" key="#com.intellij.ide.util.MemberChooser" timestamp="1604691584458">
+    <state x="765" y="199" key="#com.intellij.ide.util.MemberChooser" timestamp="1604693473659">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="199" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604691584458" />
+    <state x="765" y="199" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604693473659" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604537090962">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604537090962" />
-    <state width="1874" height="235" key="GridCell.Tab.0.bottom" timestamp="1604691249785">
+    <state width="1874" height="221" key="GridCell.Tab.0.bottom" timestamp="1604695552281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="371" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604668831300" />
     <state width="1877" height="371" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1604599701280" />
-    <state width="1874" height="235" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604691249785" />
-    <state width="1874" height="235" key="GridCell.Tab.0.center" timestamp="1604691249784">
+    <state width="1874" height="221" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604695552281" />
+    <state width="1874" height="221" key="GridCell.Tab.0.center" timestamp="1604695552281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="371" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604668831300" />
     <state width="1877" height="371" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1604599701280" />
-    <state width="1874" height="235" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604691249784" />
-    <state width="1874" height="235" key="GridCell.Tab.0.left" timestamp="1604691249784">
+    <state width="1874" height="221" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604695552281" />
+    <state width="1874" height="221" key="GridCell.Tab.0.left" timestamp="1604695552281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="371" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604668831300" />
     <state width="1877" height="371" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1604599701280" />
-    <state width="1874" height="235" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604691249784" />
-    <state width="1874" height="235" key="GridCell.Tab.0.right" timestamp="1604691249784">
+    <state width="1874" height="221" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604695552281" />
+    <state width="1874" height="221" key="GridCell.Tab.0.right" timestamp="1604695552281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="371" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604668831300" />
     <state width="1877" height="371" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1604599701280" />
-    <state width="1874" height="235" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604691249784" />
+    <state width="1874" height="221" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604695552281" />
     <state width="1874" height="339" key="GridCell.Tab.1.bottom" timestamp="1604689974733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

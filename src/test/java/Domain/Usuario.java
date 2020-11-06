@@ -14,15 +14,15 @@ public class Usuario {
     @JsonAlias("last_name")
     private String lastName;
 
-    public String getSenha() {
-        return senha;
+    public String getPassword() {
+        return password;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    private String senha;
+    private String password;
 
     public Usuario() {}
 
