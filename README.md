@@ -37,5 +37,6 @@ As classes estão dividas em:
 	• ConsultarLoginStepDef Onde validei o response de um login com erro, faltando a informação da senha.
 
 	• ConsultarUsuarioStepDef Onde validei o response de uma consulta de Lista de usuarios, unico usuario e usuario não encontrado.
+	• CriarUsuarioStepDef Onde validei o responde da criação de um usuario com sucesso. 
 
-CriarUsuarioStepDef Onde validei o responde da criação de um usuario com sucesso. 
+
