@@ -6,13 +6,19 @@ Seus serviços e retornos.
 API utilizada: http://reqres.in/api/
 
 Requisitos
+
 Java 8+
+
 Maven 4.0.0 
+
 IntelliJ - IDE utilizada. 
 
 Branches
+
 Master - Contem o projeto final. 
+
 Developer - contem todos os commits.
+
 Core_Project - contem os commits mais estaveis. 
 
 De início foi pensado em fazer com Rest + Cucumber porém visto que não
@@ -26,6 +32,7 @@ do teste propriamente dito, dividido por categorias, o StepDefinition também co
 que nada mais é do que a BasePage onde seto a API a ser utilizado e o request specification. 
 
 As classes estão dividas em:
+
 CadastrarRegistroStepDef Onde validei o response de um cadastro com erro, faltando a informação da senha.
 
 ConsultarLoginStepDef Onde validei o response de um login com erro, faltando a informação da senha.
