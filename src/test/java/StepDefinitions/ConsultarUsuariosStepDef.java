@@ -1,17 +1,17 @@
 package StepDefinitions;
 
-import io.cucumber.java.pt.Dado;
-import io.cucumber.java.pt.Então;
+import Domain.Usuario;
 import org.apache.http.HttpStatus;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 
-public class ConsultarUsuariosStepDef  {
+public class ConsultarUsuariosStepDef extends Hooks {
     private static final String LISTA_USUARIOS_ENDPOINT = "/users";
+    private static final String unicoUsuario = "/users/{userId}";
 
     @Test
     public void ListaDeUsuariosCadastrados() {
@@ -25,41 +25,36 @@ public class ConsultarUsuariosStepDef  {
 
     }
 
-    @Dado("que o usuario consulta um usuario")
-    public void queOUsuarioConsultaUmUsuario() throws Exception {
-        given().
+    @Test
+    public void UnicoUsuarioCadastrado() throws Exception {
+        Usuario usuario = given().
+                pathParam("userId", 2).
                 when().
-                get(LISTA_USUARIOS_ENDPOINT);
-    }
-
-    @Então("é retornado o sucesso da simulacao")
-    public void éRetornadoOSucessoDaSimulacao() throws Exception {
-        given().
+                get(unicoUsuario).
                 then().
-                statusCode(HttpStatus.SC_OK);
+                statusCode(HttpStatus.SC_OK).
+                extract().
+                body().jsonPath().getObject("data", Usuario.class);
+
+
+        assertThat(usuario.getEmail(), containsString("@reqres.in"));
+        //assertThat(usuario.getName(), is("Janet"));
+        //assertThat(usuario.getLastName(), is("Weaver"));
     }
 
-    @Então("é retornado que o usuario nao foi encontrado")
-    public void éRetornadoQueOUsuarioNaoFoiEncontrado() throws Exception {
-        given().
-                when().get(LISTA_USUARIOS_ENDPOINT).
+
+
+    @Test
+    public void UsuarioNaoEncontrado() throws Exception {
+        Usuario usuario = given().
+                pathParam("userId", 23).
+                when().
+                get(unicoUsuario).
                 then().
-                statusCode(HttpStatus.SC_NOT_FOUND);
-
-    }
-    @Então("é retornado uma lista resource de usuarios cadastrados")
-    public void éRetornadoUmaListaResourceDeUsuariosCadastrados() throws Exception {
-        given().
-                then().
-                statusCode(HttpStatus.SC_OK);
+                statusCode(HttpStatus.SC_NOT_FOUND).
+                extract().
+                body().jsonPath().getObject("data", Usuario.class);
 
     }
 
-    @Então("é retornado o usuario resource cadastrado com sucesso")
-    public void éRetornadoOUsuarioResourceCadastradoComSucesso() throws Exception  {
-    }
-
-    @Então("é retornado que o usuario resource nao foi encontrado")
-    public void éRetornadoQueOUsuarioResourceNaoFoiEncontrado() throws Exception  {
-    }
 }

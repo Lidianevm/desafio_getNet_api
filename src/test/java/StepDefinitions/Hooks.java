@@ -9,8 +9,8 @@ import org.junit.BeforeClass;
 import static io.restassured.RestAssured.*;
 
 public class Hooks {
-    @Before
-    public void SetUp() {
+    @BeforeClass
+    public static void SetUp() {
         enableLoggingOfRequestAndResponseIfValidationFails();
         baseURI = "https://reqres.in/";
         basePath = "/api";
