@@ -6,20 +6,19 @@ Seus serviços e retornos.
 API utilizada: http://reqres.in/api/
 
 Requisitos
+	• Java 8+
 
-Java 8+
+	• Maven 4.0.0 
 
-Maven 4.0.0 
-
-IntelliJ - IDE utilizada. 
+	• IntelliJ - IDE utilizada. 
 
 Branches
 
-Master - Contem o projeto final. 
+	• Master - Contem o projeto final. 
 
-Developer - contem todos os commits.
+	• Developer - contem todos os commits.
 
-Core_Project - contem os commits mais estaveis. 
+	• Core_Project - contem os commits mais estaveis. 
 
 De início foi pensado em fazer com Rest + Cucumber porém visto que não
 seria possível abrager todos os casos de teste pensado, achei melhor seguir
@@ -33,10 +32,10 @@ que nada mais é do que a BasePage onde seto a API a ser utilizado e o request s
 
 As classes estão dividas em:
 
-CadastrarRegistroStepDef Onde validei o response de um cadastro com erro, faltando a informação da senha.
+	• CadastrarRegistroStepDef Onde validei o response de um cadastro com erro, faltando a informação da senha.
 
-ConsultarLoginStepDef Onde validei o response de um login com erro, faltando a informação da senha.
+	• ConsultarLoginStepDef Onde validei o response de um login com erro, faltando a informação da senha.
 
-ConsultarUsuarioStepDef Onde validei o response de uma consulta de Lista de usuarios, unico usuario e usuario não encontrado.
+	• ConsultarUsuarioStepDef Onde validei o response de uma consulta de Lista de usuarios, unico usuario e usuario não encontrado.
 
 CriarUsuarioStepDef Onde validei o responde da criação de um usuario com sucesso. 
