@@ -3,6 +3,7 @@ package StepDefinitions;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Então;
 import org.apache.http.HttpStatus;
+import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
@@ -12,15 +13,8 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 public class ConsultarUsuariosStepDef  {
     private static final String LISTA_USUARIOS_ENDPOINT = "/users";
 
-    @Dado("que o usuario consulta a lista de usuarios")
-    public void queOUsuarioConsultaAListaDeUsuarios()  {
-        given().
-                when().
-                get(LISTA_USUARIOS_ENDPOINT);
-
-    }
-    @Então("é retornado uma lista de usuarios cadastrados")
-    public void éRetornadoUmaListaDeUsuariosCadastrados() {
+    @Test
+    public void ListaDeUsuariosCadastrados() {
         given().param("page","2").
                 when().
                 get(LISTA_USUARIOS_ENDPOINT).then().
